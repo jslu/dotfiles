@@ -39,10 +39,16 @@ set directory=~/.vim/tmp		" Where temporary files (*.swp) will go.
 set wildmode=longest,list		" use emacs-style tab completion when selecting files, etc
 "set wildmenu				" make tab completion for files/buffers act like bash
 
+if has("autocmd")
 " * cursorline switched while focus is switched to another split window
 " ------------------------------------
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
+  autocmd WinEnter * setlocal cursorline
+  autocmd WinLeave * setlocal nocursorline
+
+" Source the vimrc file after saving it
+" ------------------------------------
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
 
 
 " ===================================================================
@@ -88,7 +94,11 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " ------------------------------------
 nnoremap <silent> <Space> za
 
-" * Plugin: 
+" * quickly load up my vimrc file
+" ------------------------------------
+nmap <leader>v :tabedit $MYVIMRC<CR>
+
+" * Plugin: quick access to plugin functionalities
 " ------------------------------------
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
-map <silent> <F4> :TlistToggle<cr>
+map <silent> <F4> :TlistToggle<CR>
