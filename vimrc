@@ -2,7 +2,7 @@
 execute pathogen#infect()
 
 
-filetype plugin indent on
+filetype plugin indent on	" enable filetype-specific detection/plug-in/indenting
 
 set nocompatible
 set encoding=utf-8
@@ -35,8 +35,9 @@ set wildmode=longest,list		" use emacs-style tab completion when selecting files
 
 " * cursorline switched while focus is switched to another split window
 " ------------------------------------
-autocmd WinEnter * setlocal cursorline                                                                                                                                                                  
+autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+
 
 " ===================================================================
 " Variable settings
@@ -47,6 +48,15 @@ autocmd WinLeave * setlocal nocursorline
 let g:Powerline_symbols='unicode'
 let g:Powerline_colorscheme = 'solarized256'
 
+" * Plugin: Taglist
+" ------------------------------------
+let Tlist_WinWidth=40
+let Tlist_GainFocus_On_ToggleOpen=1
+
+" * Plugin: NERDTree
+" ------------------------------------
+let NERDTreeDirArrows=1
+let g:NERDTreeWinSize=30
 
 
 " ===================================================================
@@ -71,4 +81,4 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " * Plugin: 
 " ------------------------------------
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
-map <F4> :TlistToggle<cr>
+map <silent> <F4> :TlistToggle<cr>
