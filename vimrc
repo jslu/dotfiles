@@ -68,3 +68,7 @@ inoremap <RIGHT> <NOP>
 " ------------------------------------
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
+" * Plugin: 
+" ------------------------------------
+nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
+map <F4> :TlistToggle<cr>
