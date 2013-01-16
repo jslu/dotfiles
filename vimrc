@@ -18,7 +18,7 @@ set background=light
 
 
 
-set laststatus=2	" plugin: Powerline
+set laststatus=2			" Plugin: Powerline
 set showtabline=2
 
 set number
@@ -29,6 +29,12 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+
+" Backups & Files
+set backup				" Enable creation of backup file.
+set backupdir=~/.vim/backups		" Where backups will go.
+set directory=~/.vim/tmp		" Where temporary files (*.swp) will go.
+
 
 set wildmode=longest,list		" use emacs-style tab completion when selecting files, etc
 "set wildmenu				" make tab completion for files/buffers act like bash
@@ -77,6 +83,10 @@ inoremap <RIGHT> <NOP>
 " * add a side-effect of clearing search highlight to <C-l> (Clear screen)
 " ------------------------------------
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" * speed up fold expanding/collapsing by mapping it to <Space>
+" ------------------------------------
+nnoremap <silent> <Space> za
 
 " * Plugin: 
 " ------------------------------------
