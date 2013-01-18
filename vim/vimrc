@@ -1,11 +1,17 @@
 " Turn on pathogen for easier plugin management
 execute pathogen#infect()
+call pathogen#helptags()
 
 
 filetype plugin indent on	" enable filetype-specific detection/plug-in/indenting
 
 set nocompatible
+
+" Character-encoding related settings
 set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le,latin1
+set fileencoding=utf-8 encoding=utf-8 termencoding=utf-8
+
 
 
 set t_Co=256
@@ -16,6 +22,8 @@ colorscheme solarized
 set background=dark
 set background=light
 
+set splitright				" always open vertical split window in the right side
+set splitbelow				" always open horizontal split window below
 
 
 set laststatus=2			" Plugin: Powerline
@@ -47,7 +55,7 @@ if has("autocmd")
 
 " Source the vimrc file after saving it
 " ------------------------------------
-  autocmd bufwritepost .vimrc source $MYVIMRC
+  autocmd BufWritePost .vimrc source $MYVIMRC
 endif
 
 
@@ -70,6 +78,10 @@ let Tlist_GainFocus_On_ToggleOpen=1
 let NERDTreeDirArrows=1
 let g:NERDTreeWinSize=30
 
+" * Syntax: Ruby
+" ------------------------------------
+"let ruby_fold=1
+
 
 " ===================================================================
 " Key bindings
@@ -77,18 +89,23 @@ let g:NERDTreeWinSize=30
 
 " * abandom the habit of using arrow key
 " ------------------------------------
-map <UP> <NOP>
-map <DOWN> <NOP>
-map <LEFT> <NOP>
-map <RIGHT> <NOP>
-inoremap <UP> <NOP>
-inoremap <DOWN> <NOP>
-inoremap <LEFT> <NOP>
-inoremap <RIGHT> <NOP>
+map <Up> <Nop>
+map <Down> <Nop>
+map <Left> <Nop>
+map <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
+" * Bash-style line editing in command-line mode
+" ------------------------------------
+cmap <C-A> <Home>
+cmap <C-E> <End>
 
 " * add a side-effect of clearing search highlight to <C-l> (Clear screen)
 " ------------------------------------
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nnoremap <silent> <C-L> :<C-U>nohlsearch<CR><C-L>
 
 " * speed up fold expanding/collapsing by mapping it to <Space>
 " ------------------------------------
