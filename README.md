@@ -3,6 +3,9 @@
 * vim - .vim directory & vimrc file
 
 # Installation
-git clone http://github.com/jslu/dotfiles
+	git clone http://github.com/jslu/dotfiles
+	ln -s dotfiles/tmux.conf ~/.tmux.conf
+	ln -s dotfiles/vim ~/.vim
+	ln -s ~/.vim/vimrc ~/.vimrc
 
 Follow http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
