@@ -162,3 +162,9 @@
 [submodule "vim/bundle/indent-object"]
 	path = vim/bundle/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule "vim/bundle/rdoc"]
+	path = vim/bundle/rdoc
+	url = https://github.com/depuracao/vim-rdoc.git
+[submodule "vim/bundle/zencoding"]
+	path = vim/bundle/zencoding
+	url = https://github.com/mattn/zencoding-vim.git
