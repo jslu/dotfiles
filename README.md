@@ -7,5 +7,6 @@
 	ln -s dotfiles/tmux.conf ~/.tmux.conf
 	ln -s dotfiles/vim ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
+	cd dotfiles; git submodules init; git submodules update
 
 Follow http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/

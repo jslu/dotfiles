@@ -110,3 +110,55 @@
 	path = vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
 	ignore = untracked
+[submodule "vim/bundle/commentary"]
+	path = vim/bundle/commentary
+	url = git://github.com/tpope/vim-commentary.git
+	ignore = untracked
+[submodule "vim/bundle/abolish"]
+	path = vim/bundle/abolish
+	url = https://github.com/tpope/vim-abolish.git
+	ignore = untracked
+[submodule "vim/bundle/repeat"]
+	path = vim/bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
+	ignore = untracked
+[submodule "vim/bundle/colors-vividchalk"]
+	path = vim/bundle/colors-vividchalk
+	url = https://github.com/tpope/vim-vividchalk.git
+	ignore = untracked
+[submodule "vim/bundle/coffee-script"]
+	path = vim/bundle/coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+	ignore = untracked
+[submodule "vim/bundle/cucumber"]
+	path = vim/bundle/cucumber
+	url = https://github.com/tpope/vim-cucumber.git
+	ignore = untracked
+[submodule "vim/bundle/rspec"]
+	path = vim/bundle/rspec
+	url = https://github.com/skwp/vim-rspec.git
+	ignore = untracked
+[submodule "vim/bundle/tslime"]
+	path = vim/bundle/tslime
+	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "vim/bundle/turbux"]
+	path = vim/bundle/turbux
+	url = https://github.com/jgdavey/vim-turbux.git
+[submodule "vim/bundle/qargs"]
+	path = vim/bundle/qargs
+	url = https://github.com/nelstrom/vim-qargs.git
+[submodule "vim/bundle/ruby-refactoring"]
+	path = vim/bundle/ruby-refactoring
+	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "vim/bundle/ruby-debugger"]
+	path = vim/bundle/ruby-debugger
+	url = https://github.com/astashov/vim-ruby-debugger.git
+[submodule "vim/bundle/delimitMate"]
+	path = vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "vim/bundle/bufexplorer"]
+	path = vim/bundle/bufexplorer
+	url = https://github.com/thisivan/vim-bufexplorer.git
+[submodule "vim/bundle/indent-object"]
+	path = vim/bundle/indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
