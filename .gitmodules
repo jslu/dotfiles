@@ -141,33 +141,43 @@
 [submodule "vim/bundle/tslime"]
 	path = vim/bundle/tslime
 	url = https://github.com/jgdavey/tslime.vim.git
+	ignore = untracked
 [submodule "vim/bundle/turbux"]
 	path = vim/bundle/turbux
 	url = https://github.com/jgdavey/vim-turbux.git
+	ignore = untracked
 [submodule "vim/bundle/qargs"]
 	path = vim/bundle/qargs
 	url = https://github.com/nelstrom/vim-qargs.git
+	ignore = untracked
 [submodule "vim/bundle/ruby-refactoring"]
 	path = vim/bundle/ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring.git
+	ignore = untracked
 [submodule "vim/bundle/ruby-debugger"]
 	path = vim/bundle/ruby-debugger
 	url = https://github.com/astashov/vim-ruby-debugger.git
+	ignore = untracked
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+	ignore = untracked
 [submodule "vim/bundle/bufexplorer"]
 	path = vim/bundle/bufexplorer
 	url = https://github.com/thisivan/vim-bufexplorer.git
+	ignore = untracked
 [submodule "vim/bundle/indent-object"]
 	path = vim/bundle/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
+	ignore = untracked
 [submodule "vim/bundle/rdoc"]
 	path = vim/bundle/rdoc
 	url = https://github.com/depuracao/vim-rdoc.git
+	ignore = untracked
 [submodule "vim/bundle/zencoding"]
 	path = vim/bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
+	ignore = untracked
 [submodule "vim/bundle/rake"]
 	path = vim/bundle/rake
 	url = https://github.com/tpope/vim-rake.git
