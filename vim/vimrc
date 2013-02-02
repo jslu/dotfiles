@@ -91,6 +91,10 @@ let g:NERDTreeWinSize=30
 "Create my custom surround for A
 let g:surround_65 = "<a href=\"\">\r</a>"
 
+" * Plugin: Surround
+" ------------------------------------
+let g:ruby_doc_command='open'
+
 " * Syntax: Ruby
 " ------------------------------------
 "let ruby_fold=1

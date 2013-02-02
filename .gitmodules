@@ -194,3 +194,19 @@
 	path = vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
 	ignore = untracked
+[submodule "vim/bundle/javascript"]
+	path = vim/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+	ignore = untracked
+[submodule "vim/bundle/gist"]
+	path = vim/bundle/gist
+	url = https://github.com/vim-scripts/Gist.vim.git
+	ignore = untracked
+[submodule "vim/bundle/ruby-doc"]
+	path = vim/bundle/ruby-doc
+	url = git://github.com/lucapette/vim-ruby-doc.git
+	ignore = untracked
+[submodule "vim/bundle/jquery"]
+	path = vim/bundle/jquery
+	url = https://github.com/itspriddle/vim-jquery.git
+	ignore = untracked
