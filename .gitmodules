@@ -210,3 +210,15 @@
 	path = vim/bundle/jquery
 	url = https://github.com/itspriddle/vim-jquery.git
 	ignore = untracked
+[submodule "vim/bundle/ragtag"]
+	path = vim/bundle/ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+	ignore = untracked
+[submodule "vim/bundle/colorselector"]
+	path = vim/bundle/colorselector
+	url = https://github.com/c9s/colorselector.vim.git
+	ignore = untracked
+[submodule "vim/bundle/gsession"]
+	path = vim/bundle/gsession
+	url = https://github.com/c9s/gsession.vim.git
+	ignore = untracked
