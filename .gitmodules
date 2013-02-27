@@ -222,3 +222,6 @@
 	path = vim/bundle/gsession
 	url = https://github.com/c9s/gsession.vim.git
 	ignore = untracked
+[submodule "vim/bundle/camelcasemotion"]
+	path = vim/bundle/camelcasemotion
+	url = https://github.com/bkad/CamelCaseMotion.git
