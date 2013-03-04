@@ -6,10 +6,6 @@
 	path = vim/bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
 	ignore = untracked
-[submodule "vim/bundle/ruby-matchit"]
-	path = vim/bundle/ruby-matchit
-	url = https://github.com/vim-scripts/ruby-matchit.git
-	ignore = untracked
 [submodule "vim/bundle/markdown"]
 	path = vim/bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git
