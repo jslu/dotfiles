@@ -230,3 +230,7 @@
 	path = vim/bundle/textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
 	ignore = untracked
+[submodule "vim/bundle/argtextobj"]
+	path = vim/bundle/argtextobj
+	url = https://github.com/vim-scripts/argtextobj.vim.git
+	ignore = untracked
