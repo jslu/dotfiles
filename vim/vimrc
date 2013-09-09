@@ -71,6 +71,12 @@ endif
 " Variable settings
 " ===================================================================
 
+" * Plugin: Airline
+" ------------------------------------
+"let g:airline_section_y = 'BN: %{bufnr("%")}'
+"let g:airline_theme = 'molokai'
+let g:airline_theme = 'light'
+
 " * Plugin: Powerline
 " ------------------------------------
 let g:Powerline_symbols='unicode'
