@@ -12,4 +12,7 @@
 # Upgrade all bundled plugins
 	git submodule foreach git pull origin master
 
+# Add a new plugin (example)
+	git submodule add https://github.com/Lokaltog/vim-easymotion.git vim/bundle/easymotion
+
 Follow http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/

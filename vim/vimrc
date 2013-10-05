@@ -61,6 +61,9 @@ if has("autocmd")
 	autocmd WinEnter * setlocal cursorline
 	autocmd WinLeave * setlocal nocursorline
 
+	" set tabindent to 2 in ruby files
+	autocmd FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2 noexpandtab
+
 	" Source the vimrc file after saving it
 	" ------------------------------------
 	autocmd BufWritePost .vimrc source $MYVIMRC
@@ -144,5 +147,6 @@ nnoremap <silent> <Space> za
 
 " * Plugin: quick access to plugin functionalities
 " ------------------------------------
+nnoremap <silent> <F1> :MBEToggle<CR>
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 map <silent> <F4> :TlistToggle<CR>

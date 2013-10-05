@@ -234,3 +234,7 @@
 	path = vim/bundle/airline
 	url = https://github.com/bling/vim-airline
 	ignore = untracked
+[submodule "vim/bundle/minibufexpl"]
+	path = vim/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+	ignore = untracked
