@@ -6,10 +6,6 @@
 	path = vim/bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
 	ignore = untracked
-[submodule "vim/bundle/ruby-matchit"]
-	path = vim/bundle/ruby-matchit
-	url = https://github.com/vim-scripts/ruby-matchit.git
-	ignore = untracked
 [submodule "vim/bundle/markdown"]
 	path = vim/bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git
@@ -77,10 +73,6 @@
 [submodule "vim/bundle/addon-mw-utils"]
 	path = vim/bundle/addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-	ignore = untracked
-[submodule "vim/bundle/powerline"]
-	path = vim/bundle/powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
 	ignore = untracked
 [submodule "vim/bundle/autocomplpop"]
 	path = vim/bundle/autocomplpop
@@ -189,4 +181,60 @@
 [submodule "vim/bundle/easymotion"]
 	path = vim/bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+	ignore = untracked
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+	ignore = untracked
+[submodule "vim/bundle/javascript"]
+	path = vim/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+	ignore = untracked
+[submodule "vim/bundle/gist"]
+	path = vim/bundle/gist
+	url = https://github.com/vim-scripts/Gist.vim.git
+	ignore = untracked
+[submodule "vim/bundle/ruby-doc"]
+	path = vim/bundle/ruby-doc
+	url = git://github.com/lucapette/vim-ruby-doc.git
+	ignore = untracked
+[submodule "vim/bundle/jquery"]
+	path = vim/bundle/jquery
+	url = https://github.com/itspriddle/vim-jquery.git
+	ignore = untracked
+[submodule "vim/bundle/ragtag"]
+	path = vim/bundle/ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+	ignore = untracked
+[submodule "vim/bundle/colorselector"]
+	path = vim/bundle/colorselector
+	url = https://github.com/c9s/colorselector.vim.git
+	ignore = untracked
+[submodule "vim/bundle/gsession"]
+	path = vim/bundle/gsession
+	url = https://github.com/c9s/gsession.vim.git
+	ignore = untracked
+[submodule "vim/bundle/camelcasemotion"]
+	path = vim/bundle/camelcasemotion
+	url = https://github.com/bkad/CamelCaseMotion.git
+	ignore = untracked
+[submodule "vim/bundle/textobj-user"]
+	path = vim/bundle/textobj-user
+	url = https://github.com/kana/vim-textobj-user.git
+	ignore = untracked
+[submodule "vim/bundle/textobj-rubyblock"]
+	path = vim/bundle/textobj-rubyblock
+	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+	ignore = untracked
+[submodule "vim/bundle/argtextobj"]
+	path = vim/bundle/argtextobj
+	url = https://github.com/vim-scripts/argtextobj.vim.git
+	ignore = untracked
+[submodule "vim/bundle/airline"]
+	path = vim/bundle/airline
+	url = https://github.com/bling/vim-airline
+	ignore = untracked
+[submodule "vim/bundle/minibufexpl"]
+	path = vim/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
 	ignore = untracked

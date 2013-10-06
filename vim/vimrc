@@ -64,6 +64,9 @@ if has("autocmd")
 	" setting of nginx configuration file
 	autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
+	" set tabindent to 2 in ruby files
+	autocmd FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2 noexpandtab
+
 	" Source the vimrc file after saving it
 	" ------------------------------------
 	autocmd BufWritePost .vimrc source $MYVIMRC
@@ -73,6 +76,12 @@ endif
 " ===================================================================
 " Variable settings
 " ===================================================================
+
+" * Plugin: Airline
+" ------------------------------------
+"let g:airline_section_y = 'BN: %{bufnr("%")}'
+"let g:airline_theme = 'molokai'
+let g:airline_theme = 'light'
 
 " * Plugin: Powerline
 " ------------------------------------
@@ -93,6 +102,10 @@ let g:NERDTreeWinSize=30
 " ------------------------------------
 "Create my custom surround for A
 let g:surround_65 = "<a href=\"\">\r</a>"
+
+" * Plugin: Surround
+" ------------------------------------
+let g:ruby_doc_command='open'
 
 " * Syntax: Ruby
 " ------------------------------------
@@ -137,5 +150,6 @@ nnoremap <silent> <Space> za
 
 " * Plugin: quick access to plugin functionalities
 " ------------------------------------
+nnoremap <silent> <F1> :MBEToggle<CR>
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 map <silent> <F4> :TlistToggle<CR>
