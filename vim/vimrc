@@ -1,8 +1,3 @@
-" Turn on pathogen for easier plugin management
-call pathogen#infect()
-call pathogen#helptags()
-
-
 set nocompatible
 
 " Character-encoding related settings early (before any other settings)
@@ -15,8 +10,8 @@ set fileencoding=utf-8 encoding=utf-8 termencoding=utf-8
 set t_Co=256
 syntax on
 syntax enable
-let g:solarized_termcolors=256
-colorscheme solarized
+" let g:solarized_termcolors=256
+" colorscheme solarized
 set background=dark
 set background=light
 
@@ -65,7 +60,7 @@ if has("autocmd")
 	autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
 	" set tabindent to 2 in ruby files
-	autocmd FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2 noexpandtab
+	autocmd FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 
 	" Source the vimrc file after saving it
 	" ------------------------------------
@@ -82,6 +77,9 @@ endif
 "let g:airline_section_y = 'BN: %{bufnr("%")}'
 "let g:airline_theme = 'molokai'
 let g:airline_theme = 'light'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " * Plugin: Powerline
 " ------------------------------------
