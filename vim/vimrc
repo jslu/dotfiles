@@ -1,4 +1,108 @@
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
+  echo "Installing Vundle.."
+  echo ""
+  silent !mkdir -p ~/.vim/bundle
+  silent !git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim
+  let iCanHazVundle=0
+endif
+
 set nocompatible
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Extension libraries
+Plugin 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'xolox/vim-misc'
+Plugin 'L9'
+
+" Editor productivity
+Plugin 'bling/vim-airline'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'bootleq/ShowMarks'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'mru.vim'
+Plugin 'mileszs/ack.vim'
+
+" Programming helpers
+Plugin 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
+Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'Yggdroot/indentLine'
+"Plugin 'seagoj/indentline-config.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'bkad/CamelCaseMotion'
+Plugin 'tpope/vim-commentary'
+Plugin 'rizzatti/dash.vim'
+"Plugin 'garbas/vim-snipmate'
+"Plugin 'honza/vim-snippets'
+Plugin 'matchit.zip'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'glts/vim-textobj-comment'
+
+" Language & FileType support
+Plugin 'gregsexton/MatchTag'
+Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-haml'
+Plugin 'slim-template/vim-slim'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'elzr/vim-json'
+Plugin 'mattn/emmet-vim'
+Plugin 'hail2u/vim-css3-syntax'
+"Plugin 'nelstrom/vim-markdown-folding'
+Plugin 'groenewege/vim-less'
+Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
+Plugin 'cakebaker/scss-syntax.vim'"
+Plugin 'tpope/vim-git'
+
+" Integration
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'moll/vim-node'
+"Plugin 'xolox/vim-easytags'
+Plugin 'majutsushi/tagbar'
+Plugin 'walm/jshint.vim'
+Plugin 'lambdalisue/vim-gista'
+"Plugin 'scrooloose/syntastic'
+
+" Color schemes
+Plugin 'flazz/vim-colorschemes'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
 
 " Character-encoding related settings early (before any other settings)
 set encoding=utf-8
@@ -7,14 +111,15 @@ set fileencoding=utf-8 encoding=utf-8 termencoding=utf-8
 
 
 
+" Terminal & color & theme settings
 set t_Co=256
-syntax on
-syntax enable
-" let g:solarized_termcolors=256
-" colorscheme solarized
+let g:solarized_termcolors=256
+colorscheme solarized
 set background=dark
 set background=light
 
+syntax on
+syntax enable
 
 set splitright				" always open vertical split window in the right side
 set splitbelow				" always open horizontal split window below
@@ -23,25 +128,32 @@ set splitbelow				" always open horizontal split window below
 set laststatus=2			" Plugin: Powerline
 set showtabline=2
 
-set number
-set cursorline
+" Various position indicators
+set number				" show line numbers
+set cursorline				" highlight the line on which the cursor is currently staying on
+set colorcolumn=80			" mark a vertical darkline to indicate the 80th character in a line
+highlight colorcolumn ctermbg=0
+"match OverLength /\%>80v.\+/
+"highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 
 " Search-related settings
-set ignorecase
-set smartcase
-set hlsearch
-set incsearch
+set ignorecase				" do case insensitive matching
+set smartcase				" do smart case matching
+set hlsearch				" highlight search
+set incsearch				" incremental search
 
 " Backups & Files
-set backup				" Enable creation of backup file.
-set backupdir=~/.vim/backups		" Where backups will go.
-set directory=~/.vim/tmp		" Where temporary files (*.swp) will go.
+set backup				" enable creation of backup file.
+set backupdir=~/.vim/backups		" where backups will go.
+set directory=~/.vim/tmp		" where temporary files (*.swp) will go.
 
 
 set wildmode=longest,list		" use emacs-style tab completion when selecting files, etc
 "set wildmenu				" make tab completion for files/buffers act like bash
 
-set listchars=tab:▶\ ,eol:¬		" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▶\ ,eol:¬		" use the same symbols as TextMate for tabstops and EOLs
+
+"set clipboard=unnamed			" copy cross vim instance
 
 " Default tabs & spaces
 set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
@@ -49,7 +161,7 @@ set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
 if has("autocmd")
 	" enable filetype-specific detection/plug-in/indenting
-	filetype plugin indent on	
+	filetype plugin indent on
 
 	" * cursorline switched while focus is switched to another split window
 	" ------------------------------------
@@ -59,8 +171,12 @@ if has("autocmd")
 	" setting of nginx configuration file
 	autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
-	" set tabindent to 2 in ruby files
-	autocmd FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+	" set tabindent to 2 in ruby/html/css/javascript/vim files
+	autocmd FileType ruby       set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+	autocmd FileType html       set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+	autocmd FileType css        set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+	autocmd FileType javascript set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+	autocmd FileType vim        set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 
 	" Source the vimrc file after saving it
 	" ------------------------------------
@@ -68,8 +184,10 @@ if has("autocmd")
 endif
 
 
+
+
 " ===================================================================
-" Variable settings
+" Variable settings for plug-ins
 " ===================================================================
 
 " * Plugin: Airline
@@ -83,8 +201,8 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " * Plugin: Powerline
 " ------------------------------------
-let g:Powerline_symbols='unicode'
-let g:Powerline_colorscheme = 'solarized256'
+"let g:Powerline_symbols='unicode'
+"let g:Powerline_colorscheme = 'solarized256'
 
 " * Plugin: Taglist
 " ------------------------------------
@@ -108,6 +226,27 @@ let g:ruby_doc_command='open'
 " * Syntax: Ruby
 " ------------------------------------
 "let ruby_fold=1
+
+" * Plugin: Indent guides
+" ------------------------------------
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
+let g:indent_guides_color_change_percent = 30
+let g:indent_guides_guide_size = 1
+
+" * Plugin: Indent Line
+" ------------------------------------
+
+" * Plugin: neosnippet
+" ------------------------------------
+" Enable snipMate compatibility feature.
+"let g:neosnippet#enable_snipmate_compatibility = 1
+" Tell Neosnippet about the other snippets
+"let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
 
 
 " ===================================================================
@@ -151,3 +290,23 @@ nnoremap <silent> <Space> za
 nnoremap <silent> <F1> :MBEToggle<CR>
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 map <silent> <F4> :TlistToggle<CR>
+
+" * Plugin: neosnippet
+" ------------------------------------
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif"
