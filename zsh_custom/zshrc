@@ -29,14 +29,34 @@ ZSH_THEME="tjkirch-jslu"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx git node npm nvm tmux rails rvm ruby vagrant brew sudo zsh-syntax-highlighting)
+plugins=(osx git node npm nvm tmux rails rvm ruby vagrant brew sudo zsh-syntax-highlighting history-substring-search autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+# Setup zsh-autosuggestions
+#source /Users/jslu/.oh-my-zsh/custom/plugins/autosuggestions/autosuggestions.zsh
+
+# Enable autosuggestions automatically
+zle-line-init() {
+    zle autosuggest-start
+}
+
+zle -N zle-line-init
+
+# use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
+# zsh-autosuggestions is designed to be unobtrusive)
+bindkey '^T' autosuggest-toggle
+
+
+# Setup history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 
 # Customize to your needs...
 export PATH=/Users/jslu/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:~/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:~/bin:$PATH
