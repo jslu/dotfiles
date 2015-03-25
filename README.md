@@ -5,7 +5,6 @@
 
 # Installation
 	git clone --recursive http://github.com/jslu/dotfiles.git	# use --recursive to retrieve submodules
-	git submodule init; git submodule update --recursive
 
 	Follow the instruction on https://github.com/robbyrussell/oh-my-zsh to install oh-my-zsh
 
@@ -16,5 +15,11 @@
 	ln -s ~/.vim/vimrc ~/.vimrc
 
 # Install all bundled vim plugins
-	vim +PluginInstall +qall (from commandline)
-	:PluginInstall (within vim)
+	vim +PluginInstall +qall	# from commandline
+	:PluginInstall			# within vim
+
+# Update submodules when they're outdated
+	git submodule foreach --recursive git pull origin master	# submodules-related commands from [this tutorial][1]
+
+
+[1]: http://blog.chh.tw/posts/git-submodule/	"How to use git-submodule commands"
