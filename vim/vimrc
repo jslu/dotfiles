@@ -57,11 +57,13 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'glts/vim-textobj-comment'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Language & FileType support
 Plugin 'gregsexton/MatchTag'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'gkz/vim-ls'
 Plugin 'tpope/vim-haml'
 Plugin 'slim-template/vim-slim'
 Plugin 'maksimr/vim-jsbeautify'
