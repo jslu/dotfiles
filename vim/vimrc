@@ -158,6 +158,7 @@ set pastetoggle=<F5>			" quickly toggle paste mode to avoid autoindent
 
 " Default tabs & spaces
 set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
+set autoindent smartindent
 
 
 if has("autocmd")
@@ -173,11 +174,12 @@ if has("autocmd")
 	autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
 	" set tabindent to 2 in ruby/html/css/javascript/vim files
-	autocmd FileType ruby       set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
-	autocmd FileType html       set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
-	autocmd FileType css        set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
-	autocmd FileType javascript set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
-	autocmd FileType vim        set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+  " * tabstop:      the screen width of an existing \t
+  " * softtabstop:  number of columns for a <Tab>
+  " * shiftwidth:   indents with this width
+  " * expandtab:    expand <Tab> into spaces
+	autocmd FileType ruby,html,css,slim,vim       set tabstop=2 softtabstop=2 shiftwidth=2 expandtab "smarttab
+	autocmd FileType javascript,markdown          set tabstop=4 softtabstop=4 shiftwidth=4 expandtab "smarttab
 
 	" Source the vimrc file after saving it
 	" ------------------------------------
