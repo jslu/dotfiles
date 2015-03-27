@@ -44,7 +44,7 @@ Plugin 'Shougo/neosnippet-snippets'
 Plugin 'tpope/vim-surround'
 Plugin 'Raimondi/delimitMate'
 Plugin 'nathanaelkane/vim-indent-guides'
-"Plugin 'Yggdroot/indentLine'
+"Plugin 'Yggdroot/indentLine'	" Make sure vim comes with 'conceal' feature
 "Plugin 'seagoj/indentline-config.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'bkad/CamelCaseMotion'
@@ -240,6 +240,8 @@ let g:indent_guides_guide_size = 1
 
 " * Plugin: Indent Line
 " ------------------------------------
+let g:indentLine_char = '┆'
+let g:indentLine_color_term = 232
 
 " * Plugin: neocomplete
 " ------------------------------------
