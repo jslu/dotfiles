@@ -65,5 +65,10 @@ export PATH=/Users/jslu/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/u
 fpath=(/usr/local/share/zsh-completions $HOME/.zsh/func $fpath)
 typeset -U fpath
 
+export EDITOR=vim
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 eval "$(fasd --init auto)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
