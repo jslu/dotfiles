@@ -13,6 +13,7 @@ Follow the instruction on https://github.com/robbyrussell/oh-my-zsh to install o
 Then create symbolic links into the repository.
 
     cd /full_path_to/dotfiles/fasd; make install
+    cd /full_path_to/dotfiles/sack; ./install_sack.sh
 	ln -s /full_path_to/dotfiles/zsh_custom/themes ~/.oh-my-zsh/custom/themes
 	ln -s /full_path_to/dotfiles/zsh_custom/zshrc ~/.zshrc
 	(cd ~/.oh-my-zsh/custom/plugins/; for i in /full_path_to/dotfiles/zsh_custom/plugins/*; do ln -s $i; done)
@@ -26,11 +27,19 @@ Then create symbolic links into the repository.
 # Update submodules when they're outdated
 	git submodule foreach --recursive git pull origin master
 
+# The list of related command line software (can be installed w/ homebrew under Mac)
+* tmux
+* tree
+* ctags
+* the_silver_searcher (ag)
+* gnupg
+* wget
+* unrar
 
 # Reference
 * Submodules-related usage from [this tutorial][1]
 * Vundle-related usage from [this tutorial][2]. I like the way he checks the existence of Vundle and install it automatically if needed, however the syntax of specifying a plugin to install is outdated. The vimrc is now managing plugins with Vundle's latest syntax, instructed by [it's github project page][3].
 
-[1]: http://blog.chh.tw/posts/git-submodule/	"Git Submodule 用法筆記" 
-[2]: http://blog.chh.tw/posts/vim-vundle/	"更好用的 Vim 外掛管理工具：Vundle" 
-[3]: https://github.com/gmarik/Vundle.vim	"Vundle, the plug-in manager for Vim" 
+[1]: http://blog.chh.tw/posts/git-submodule/	"Git Submodule 用法筆記"
+[2]: http://blog.chh.tw/posts/vim-vundle/	"更好用的 Vim 外掛管理工具：Vundle"
+[3]: https://github.com/gmarik/Vundle.vim	"Vundle, the plug-in manager for Vim"

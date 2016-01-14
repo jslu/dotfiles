@@ -35,7 +35,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mru.vim'
-Plugin 'mileszs/ack.vim'
+" replace ack with ag (the silver searcher https://github.com/ggreer/the_silver_searcher)
+Plugin 'rking/ag.vim' " The usage & available shortcut keys are on the github repo README
 
 " Programming helpers
 Plugin 'Shougo/neocomplcache.vim'
@@ -279,6 +280,10 @@ if !exists('g:neocomplcache_keyword_patterns')
 endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
+" Plugin ag.vim: https://github.com/rking/ag.vim
+let g:ag_prg="/usr/local/bin/ag --vimgrep"
+let g:ag_working_path_mode="r"
+
 " Plugin key-mappings.
 inoremap <expr><C-g>     neocomplcache#undo_completion()
 inoremap <expr><C-l>     neocomplcache#complete_common_string()
@@ -373,6 +378,10 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 " * quickly toggle between showing/hiding invisible characters
 " ------------------------------------
 nmap <leader>l :set list!<CR>
+
+" * quickly look up in Dash for the keyword under cursor
+" ------------------------------------
+nmap <silent> <leader>d <Plug>DashSearch
 
 " * add a side-effect of clearing search highlight to <C-l> (Clear screen)
 " ------------------------------------

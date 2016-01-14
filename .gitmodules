@@ -7,3 +7,6 @@
 [submodule "fasd"]
 	path = fasd
 	url = https://github.com/clvv/fasd.git
+[submodule "sack"]
+	path = sack
+	url = https://github.com/sampson-chen/sack.git
