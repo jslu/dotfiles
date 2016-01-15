@@ -36,6 +36,7 @@ Can be installed using [Homebrew][1] under Mac
 * gnupg
 * wget
 * unrar
+* reattach-to-user-namespace
 
 # Reference
 * Submodules-related usage from [this tutorial][2]
