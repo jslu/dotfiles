@@ -12,6 +12,7 @@ Follow the instruction on https://github.com/robbyrussell/oh-my-zsh to install o
 
 Then create symbolic links into the repository.
 
+~~~
     cd /full_path_to/dotfiles/fasd; make install
     cd /full_path_to/dotfiles/sack; ./install_sack.sh
 	ln -s /full_path_to/dotfiles/zsh_custom/themes ~/.oh-my-zsh/custom/themes
@@ -21,6 +22,7 @@ Then create symbolic links into the repository.
 	ln -s dotfiles/pryrc ~/.pryrc
 	ln -s dotfiles/vim ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
+~~~
 
 # Install all bundled vim plugins
 	vim +PluginInstall +qall	# from commandline
@@ -30,6 +32,7 @@ Then create symbolic links into the repository.
 
 # The list of related command line software
 Can be installed using [Homebrew][1] under Mac
+
 * tmux
 * tree
 * ctags
@@ -38,6 +41,9 @@ Can be installed using [Homebrew][1] under Mac
 * wget
 * unrar
 * reattach-to-user-namespace
+
+# TODO
+Automate the installation steps
 
 # Reference
 * Submodules-related usage from [this tutorial][2]

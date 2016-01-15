@@ -416,3 +416,8 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif"
+
+
+" * Add a shortcut to bring out Marked 2 markdown previewer
+" ------------------------------------
+nnoremap <leader>m :!open % -a Marked\ 2<CR> | redraw!
