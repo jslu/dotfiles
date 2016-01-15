@@ -27,7 +27,8 @@ Then create symbolic links into the repository.
 # Update submodules when they're outdated
 	git submodule foreach --recursive git pull origin master
 
-# The list of related command line software (can be installed w/ homebrew under Mac)
+# The list of related command line software
+Can be installed using [Homebrew][1] under Mac
 * tmux
 * tree
 * ctags
@@ -37,9 +38,12 @@ Then create symbolic links into the repository.
 * unrar
 
 # Reference
-* Submodules-related usage from [this tutorial][1]
-* Vundle-related usage from [this tutorial][2]. I like the way he checks the existence of Vundle and install it automatically if needed, however the syntax of specifying a plugin to install is outdated. The vimrc is now managing plugins with Vundle's latest syntax, instructed by [it's github project page][3].
+* Submodules-related usage from [this tutorial][2]
+* Vundle-related usage from [this tutorial][3]. I like the way he checks the existence of Vundle and install it automatically if needed, however the syntax of specifying a plugin to install is outdated. The vimrc is now managing plugins with Vundle's latest syntax, instructed by [it's github project page][4].
+* Large & GUI applications under Mac OS X can be managed under command line with Homebrew [Cask][5]
 
-[1]: http://blog.chh.tw/posts/git-submodule/	"Git Submodule 用法筆記"
-[2]: http://blog.chh.tw/posts/vim-vundle/	"更好用的 Vim 外掛管理工具：Vundle"
-[3]: https://github.com/gmarik/Vundle.vim	"Vundle, the plug-in manager for Vim"
+[1]: http://brew.sh/    "Homebrew - The missing package manager for OS X"
+[2]: http://blog.chh.tw/posts/git-submodule/	"Git Submodule 用法筆記"
+[3]: http://blog.chh.tw/posts/vim-vundle/	"更好用的 Vim 外掛管理工具：Vundle"
+[4]: https://github.com/gmarik/Vundle.vim	"Vundle, the plug-in manager for Vim"
+[5]: http://caskroom.io/    "Cask"
