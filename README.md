@@ -18,6 +18,7 @@ Then create symbolic links into the repository.
 	ln -s /full_path_to/dotfiles/zsh_custom/zshrc ~/.zshrc
 	(cd ~/.oh-my-zsh/custom/plugins/; for i in /full_path_to/dotfiles/zsh_custom/plugins/*; do ln -s $i; done)
 	ln -s dotfiles/tmux.conf ~/.tmux.conf
+	ln -s dotfiles/pryrc ~/.pryrc
 	ln -s dotfiles/vim ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
 
