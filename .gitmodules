@@ -10,3 +10,6 @@
 [submodule "sack"]
 	path = sack
 	url = https://github.com/sampson-chen/sack.git
+[submodule "zsh_custom/themes/powerlevel9k"]
+	path = zsh_custom/themes/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
