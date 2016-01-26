@@ -6,9 +6,15 @@
 # Installation
 First, clone the repository (use `--recursive` to retrieve submodules).
 
+~~~
 	git clone --recursive http://github.com/jslu/dotfiles.git
+~~~
 
-Follow the instruction on https://github.com/robbyrussell/oh-my-zsh to install oh-my-zsh.
+Install oh-my-zsh[6].
+
+~~~
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+~~~
 
 Then create symbolic links into the repository.
 
@@ -25,10 +31,16 @@ Then create symbolic links into the repository.
 ~~~
 
 # Install all bundled vim plugins
+
+~~~
 	vim +PluginInstall +qall	# from commandline
+~~~
 
 # Update submodules when they're outdated
+
+~~~
 	git submodule foreach --recursive git pull origin master
+~~~
 
 # The list of related command line software
 Can be installed using [Homebrew][1] under Mac
@@ -41,6 +53,12 @@ Can be installed using [Homebrew][1] under Mac
 * wget
 * unrar
 * reattach-to-user-namespace
+
+# Mac software batch installation by Cask
+
+~~~
+    ./CaskInstaller.sh
+~~~
 
 # TODO
 Automate the installation steps
@@ -55,3 +73,4 @@ Automate the installation steps
 [3]: http://blog.chh.tw/posts/vim-vundle/	"更好用的 Vim 外掛管理工具：Vundle"
 [4]: https://github.com/gmarik/Vundle.vim	"Vundle, the plug-in manager for Vim"
 [5]: http://caskroom.io/    "Cask"
+[6]: https://github.com/robbyrussell/oh-my-zsh  "oh-my-zsh"

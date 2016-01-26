@@ -68,8 +68,14 @@ typeset -U fpath
 
 eval "$(fasd --init auto)"
 
+# Explicitly specify the EDITOR to be my favorite one
 export EDITOR=vim
+# Set the Homebrew cask linking to be in /Applications folder
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+
+# Joe's own aliases
+alias cask="brew cask"
 
 ## Settings for powerlevel9k theme
 POWERLEVEL9K_MODE='awesome-fontconfig'
