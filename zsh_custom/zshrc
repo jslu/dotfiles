@@ -77,6 +77,14 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Joe's own aliases
 alias cask="brew cask"
 
+
+# Look up API from command line
+# Usage example: $ dash ruby:FileUtil
+function dash() {
+  open "dash://$*"
+}
+
+
 ## Settings for powerlevel9k theme
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon_joined dir vcs)
