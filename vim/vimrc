@@ -35,6 +35,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mru.vim'
+Plugin 'mbbill/undotree'
 " replace ack with ag (the silver searcher https://github.com/ggreer/the_silver_searcher)
 Plugin 'rking/ag.vim' " The usage & available shortcut keys are on the github repo README
 
@@ -205,6 +206,7 @@ let g:airline_theme = 'light'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
+"let g:airline#extensions#whitespace#enabled = 1
 
 " * Plugin: Powerline
 " ------------------------------------
@@ -395,7 +397,8 @@ nnoremap <silent> <Space> za
 " ------------------------------------
 nnoremap <silent> <F1> :MBEToggle<CR>
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
-map <silent> <F4> :TlistToggle<CR>
+nnoremap <silent> <F4> :TlistToggle<CR>
+nnoremap <silent> <F5> :UndotreeToggle<CR>
 
 " * Plugin: neosnippet
 " ------------------------------------
