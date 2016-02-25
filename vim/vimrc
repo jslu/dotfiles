@@ -38,6 +38,7 @@ Plugin 'mru.vim'
 Plugin 'mbbill/undotree'
 " replace ack with ag (the silver searcher https://github.com/ggreer/the_silver_searcher)
 Plugin 'rking/ag.vim' " The usage & available shortcut keys are on the github repo README
+Plugin 'chrisbra/Recover.vim'
 
 " Programming helpers
 Plugin 'Shougo/neocomplcache.vim'
@@ -78,6 +79,7 @@ Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
 Plugin 'cakebaker/scss-syntax.vim'"
 Plugin 'tpope/vim-git'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'klen/python-mode'
 
 " Integration
 Plugin 'tpope/vim-fugitive'

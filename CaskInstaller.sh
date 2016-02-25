@@ -60,6 +60,8 @@ brew cask install vlc
 brew cask install flip4mac
 brew cask install perian
 
+brew cask install divvy
+
 # need password
 #brew cask install mamp
 #brew cask install splashtop-personal
