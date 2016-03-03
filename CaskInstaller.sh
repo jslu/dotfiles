@@ -61,6 +61,7 @@ brew cask install flip4mac
 brew cask install perian
 
 brew cask install divvy
+brew cask install stay
 
 # need password
 #brew cask install mamp
