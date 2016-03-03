@@ -426,3 +426,7 @@ endif"
 " * Add a shortcut to bring out Marked 2 markdown previewer
 " ------------------------------------
 nnoremap <leader>m :!open % -a Marked\ 2<CR> | redraw!
+
+" * Add support for mouse under visual/normal/insert/commandline/prompt mode
+set mouse=vnicr
+
