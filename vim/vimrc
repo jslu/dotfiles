@@ -30,7 +30,7 @@ Plugin 'L9'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'bootleq/ShowMarks'
+Plugin 'kshenoy/vim-signature'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -77,7 +77,7 @@ Plugin 'hail2u/vim-css3-syntax'
 "Plugin 'nelstrom/vim-markdown-folding'
 Plugin 'groenewege/vim-less'
 Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
-Plugin 'cakebaker/scss-syntax.vim'"
+Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'tpope/vim-git'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'StanAngeloff/php.vim'
@@ -216,6 +216,11 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " ------------------------------------
 "let g:Powerline_symbols='unicode'
 "let g:Powerline_colorscheme = 'solarized256'
+
+" * Plugin: GitGutter
+" ------------------------------------
+let g:gitgutter_realtime = 1
+let g:gitgutter_eager = 1
 
 " * Plugin: Taglist
 " ------------------------------------
