@@ -27,7 +27,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'L9'
 
 " Editor productivity
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bootleq/ShowMarks'
 Plugin 'kien/ctrlp.vim'
@@ -78,6 +79,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
 Plugin 'cakebaker/scss-syntax.vim'"
 Plugin 'tpope/vim-git'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'klen/python-mode'
 
