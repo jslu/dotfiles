@@ -76,6 +76,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Joe's own aliases
 alias cask="brew cask"
+alias diff="colordiff"
 
 
 # Look up API from command line

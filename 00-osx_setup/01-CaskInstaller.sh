@@ -32,6 +32,7 @@ brew cask install marked
 
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
+brew cask install vagrant-manager
 brew cask install dockertoolbox
 
 brew cask install dash
@@ -40,6 +41,7 @@ brew cask install sourcetree
 brew cask install java
 brew cask install postgres
 brew cask install postico
+brew cask install mysqlworkbench
 
 #brew cask install caskroom-versions/sublime-text3
 #brew cask install textexpander
@@ -52,9 +54,11 @@ brew cask install karabiner
 brew cask install keycastr
 brew cask install magican
 brew cask install simplecap
-brew cask install tunnelblick
 brew cask install xmind
 brew cask install xquartz
+
+brew cask install tunnelblick
+brew cask install shadowsocksx
 
 brew cask install vlc
 brew cask install flip4mac
@@ -79,3 +83,10 @@ brew cask install font-inconsolata-dz-for-powerline
 # https://github.com/sindresorhus/quick-look-plugins
 brew cask install betterzipql qlcolorcode qlmarkdown qlprettypatch qlstephen qlvideo quicklook-csv quicklook-json suspicious-package
 
+
+# GUI apps that currently have no cask
+#Xcode
+#Microsoft remote desktop
+#LINE
+#Wunderlist
+#WeChat
