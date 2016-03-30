@@ -15,6 +15,7 @@ brew update
 brew install \
 tmux \
 tree \
+ag \
 mackup \
 gpg \
 ssh-copy-id \

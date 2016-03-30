@@ -35,6 +35,8 @@ brew cask install virtualbox-extension-pack
 brew cask install vagrant-manager
 brew cask install dockertoolbox
 
+brew cask install hacker-menu
+
 brew cask install dash
 brew cask install gitx
 brew cask install sourcetree
