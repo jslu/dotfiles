@@ -89,7 +89,7 @@ function dash() {
 ## Settings for powerlevel9k theme
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon_joined dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs_joined history time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs_joined rvm history time)
 
 # enable the vcs segment in general
 #POWERLEVEL9K_SHOW_CHANGESET=true
@@ -116,3 +116,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
