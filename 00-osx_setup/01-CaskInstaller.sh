@@ -32,6 +32,7 @@ brew cask install marked
 
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
+brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install dockertoolbox
 
