@@ -71,6 +71,9 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true && \
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true && \
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
+# Put Screenshots in the ~/Pictures folder
+defaults write com.apple.screencapture location ~/Pictures/
+
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
