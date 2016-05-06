@@ -18,6 +18,7 @@ tree \
 ag \
 mackup \
 gpg \
+grc \
 ssh-copy-id \
 colordiff \
 diff-so-fancy
