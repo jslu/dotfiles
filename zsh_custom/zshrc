@@ -80,7 +80,8 @@ alias diff="colordiff"
 
 source "`brew --prefix`/etc/grc.bashrc"
 
-export HOMEBREW_GITHUB_API_TOKEN="11d20dab98d4b70b93187d1f09a57d8adaf15225"
+#export HOMEBREW_GITHUB_API_TOKEN="TOKENS-NOT-TO-BE-DISCLOSED"
+source .secret_settings_rc
 
 # Look up API from command line
 # Usage example: $ dash ruby:FileUtil
