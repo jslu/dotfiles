@@ -130,6 +130,7 @@ git config --global core.editor "vi" && \
 git config --global color.ui true && \
 git config --global column.ui auto && \
 git config --global push.default simple
+git config --global core.excludesfile '~/.gitignore_global'
 
 git config --global pager.diff "diff-so-fancy | less --tabs=4 -RFX" && \
 git config --global pager.show "diff-so-fancy | less --tabs=4 -RFX"

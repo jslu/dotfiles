@@ -78,6 +78,9 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 alias cask="brew cask"
 alias diff="colordiff"
 
+source "`brew --prefix`/etc/grc.bashrc"
+
+export HOMEBREW_GITHUB_API_TOKEN="11d20dab98d4b70b93187d1f09a57d8adaf15225"
 
 # Look up API from command line
 # Usage example: $ dash ruby:FileUtil
