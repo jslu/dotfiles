@@ -82,6 +82,9 @@ Plugin 'tpope/vim-git'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'klen/python-mode'
+Plugin 'rdolgushin/groovy.vim'
+Plugin 'tfnico/vim-gradle'
+Plugin 'nathanneff/grails-vim'
 
 " Integration
 Plugin 'tpope/vim-fugitive'
@@ -188,7 +191,7 @@ if has("autocmd")
   " * shiftwidth:   indents with this width
   " * expandtab:    expand <Tab> into spaces
 	autocmd FileType ruby,html,css,slim,vim       set tabstop=2 softtabstop=2 shiftwidth=2 expandtab "smarttab
-	autocmd FileType javascript,markdown          set tabstop=4 softtabstop=4 shiftwidth=4 expandtab "smarttab
+	autocmd FileType javascript,markdown,php      set tabstop=4 softtabstop=4 shiftwidth=4 expandtab "smarttab
 
 	" Source the vimrc file after saving it
 	" ------------------------------------

@@ -73,6 +73,9 @@ export EDITOR=vim
 # Set the Homebrew cask linking to be in /Applications folder
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+#export GROOVY_HOME="/usr/local/opt/groovy/libexec"
+#export GRAILS_HOME="/usr/local/opt/grails/libexec"
+
 
 # Joe's own aliases
 alias cask="brew cask"
@@ -81,7 +84,7 @@ alias diff="colordiff"
 source "`brew --prefix`/etc/grc.bashrc"
 
 #export HOMEBREW_GITHUB_API_TOKEN="TOKENS-NOT-TO-BE-DISCLOSED"
-source .secret_settings_rc
+source ~/.secret_settings_rc
 
 # Look up API from command line
 # Usage example: $ dash ruby:FileUtil
@@ -122,3 +125,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/joe.lu/.sdkman"
+[[ -s "/Users/joe.lu/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/joe.lu/.sdkman/bin/sdkman-init.sh"
