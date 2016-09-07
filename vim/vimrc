@@ -37,6 +37,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mru.vim'
 Plugin 'mbbill/undotree'
+Plugin 'tpope/vim-unimpaired'
 " replace ack with ag (the silver searcher https://github.com/ggreer/the_silver_searcher)
 Plugin 'rking/ag.vim' " The usage & available shortcut keys are on the github repo README
 Plugin 'chrisbra/Recover.vim'
@@ -297,6 +298,9 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 " Plugin ag.vim: https://github.com/rking/ag.vim
 let g:ag_prg="/usr/local/bin/ag --vimgrep"
 let g:ag_working_path_mode="r"
+" Use ag (the silver searcher) as the default grepprg
+set grepprg=ag\ --vimgrep\ $*
+set grepformat=%f:%l:%c:%m
 
 " Plugin key-mappings.
 inoremap <expr><C-g>     neocomplcache#undo_completion()
@@ -389,9 +393,20 @@ cmap <C-E> <End>
 " ------------------------------------
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
+" * Ctags: open the definition in a split
+" * In addition to Ctrl+w Ctrl+] to do horizontal split, here's the vertical one
+" ------------------------------------
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 " * quickly toggle between showing/hiding invisible characters
 " ------------------------------------
 nmap <leader>l :set list!<CR>
+" * quickly toggle between showing/hiding line numbers
+" ------------------------------------
+nmap <leader>n :set number!<CR>
+" * quickly toggle line wrapping on/off
+" ------------------------------------
+nmap <leader>w :set wrap!<CR>
 
 " * quickly look up in Dash for the keyword under cursor
 " ------------------------------------

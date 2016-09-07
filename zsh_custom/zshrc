@@ -80,6 +80,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Joe's own aliases
 alias cask="brew cask"
 alias diff="colordiff"
+alias g="googler -n 7"
 
 source "`brew --prefix`/etc/grc.bashrc"
 
@@ -129,3 +130,5 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/joe.lu/.sdkman"
 [[ -s "/Users/joe.lu/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/joe.lu/.sdkman/bin/sdkman-init.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

@@ -21,7 +21,8 @@ gpg \
 grc \
 ssh-copy-id \
 colordiff \
-diff-so-fancy
+diff-so-fancy \
+googler
 
 brew tap homebrew/versions
 
