@@ -107,6 +107,12 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.CrashReporter DialogType -string "none"
 
 
+# Stop the Photos app from opening when iPhone connects
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+# Disable Auto backup/sync with iTunes when iPhone or iPad connects
+defaults write com.apple.iTunes DeviceBackupsDisabled -bool true
+
+
 #############################################################
 # Agree to Xcode
 sudo xcrun cc

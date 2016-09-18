@@ -80,7 +80,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Joe's own aliases
 alias cask="brew cask"
 alias diff="colordiff"
-alias g="googler -n 7"
+alias ggl="googler -n 7"
 
 source "`brew --prefix`/etc/grc.bashrc"
 
