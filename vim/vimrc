@@ -75,6 +75,7 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'elzr/vim-json'
 Plugin 'mattn/emmet-vim'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'lambdatoast/elm.vim'
 "Plugin 'nelstrom/vim-markdown-folding'
 Plugin 'groenewege/vim-less'
 Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
