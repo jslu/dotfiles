@@ -40,14 +40,13 @@ plugins=(osx git node npm nvm tmux rails rvm ruby vagrant brew sudo zsh-syntax-h
 source $ZSH/oh-my-zsh.sh
 
 # Setup zsh-autosuggestions
-#source /Users/jslu/.oh-my-zsh/custom/plugins/autosuggestions/autosuggestions.zsh
+source /Users/joe.lu/.oh-my-zsh/custom/plugins/autosuggestions/autosuggestions.zsh
 
 # Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-
-zle -N zle-line-init
+#zle-line-init() {
+#    zle autosuggest-start
+#}
+#zle -N zle-line-init
 
 # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
 # zsh-autosuggestions is designed to be unobtrusive)
@@ -81,6 +80,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 alias cask="brew cask"
 alias diff="colordiff"
 alias ggl="googler -n 7"
+alias tc-proxy="ssh -ND 1088 -o 'GatewayPorts yes' tc-staging.ayla.com.cn &"
 
 source "`brew --prefix`/etc/grc.bashrc"
 
@@ -132,3 +132,5 @@ export SDKMAN_DIR="/Users/joe.lu/.sdkman"
 [[ -s "/Users/joe.lu/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/joe.lu/.sdkman/bin/sdkman-init.sh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

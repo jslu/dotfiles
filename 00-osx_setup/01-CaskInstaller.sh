@@ -86,6 +86,8 @@ brew cask install font-inconsolata-dz-for-powerline
 # https://github.com/sindresorhus/quick-look-plugins
 brew cask install betterzipql qlcolorcode qlmarkdown qlprettypatch qlstephen qlvideo quicklook-csv quicklook-json suspicious-package
 
+# install Aerial (Apple TV screensavor)
+brew cask install aerial
 
 # GUI apps that currently have no cask
 #Xcode

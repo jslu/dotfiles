@@ -22,7 +22,8 @@ grc \
 ssh-copy-id \
 colordiff \
 diff-so-fancy \
-googler
+googler \
+fzf
 
 brew tap homebrew/versions
 
