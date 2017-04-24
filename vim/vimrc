@@ -41,7 +41,7 @@ Plugin 'mru.vim'
 Plugin 'mbbill/undotree'
 Plugin 'tpope/vim-unimpaired'
 " replace ack with ag (the silver searcher https://github.com/ggreer/the_silver_searcher)
-Plugin 'rking/ag.vim' " The usage & available shortcut keys are on the github repo README
+"Plugin 'rking/ag.vim' " The usage & available shortcut keys are on the github repo README
 Plugin 'chrisbra/Recover.vim'
 "Plugin 'severin-lemaignan/vim-minimap'
 
