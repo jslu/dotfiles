@@ -40,7 +40,7 @@ plugins=(osx git node npm nvm tmux rails rvm ruby vagrant brew sudo zsh-syntax-h
 source $ZSH/oh-my-zsh.sh
 
 # Setup zsh-autosuggestions
-source /Users/joe.lu/.oh-my-zsh/custom/plugins/autosuggestions/autosuggestions.zsh
+source ~/.oh-my-zsh/custom/plugins/autosuggestions/autosuggestions.zsh
 
 # Enable autosuggestions automatically
 #zle-line-init() {
@@ -59,7 +59,7 @@ bindkey '^[[B' history-substring-search-down
 
 
 # Customize to your needs...
-export PATH=/Users/jslu/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:~/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:~/bin:$PATH
+export PATH=~/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:~/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:~/bin:$PATH
 
 ## by jslu
 fpath=(/usr/local/share/zsh-completions $HOME/.zsh/func $fpath)
