@@ -40,7 +40,7 @@ plugins=(osx git node npm nvm tmux rails rvm ruby vagrant brew sudo zsh-syntax-h
 source $ZSH/oh-my-zsh.sh
 
 # Setup zsh-autosuggestions
-source ~/.oh-my-zsh/custom/plugins/autosuggestions/autosuggestions.zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable autosuggestions automatically
 #zle-line-init() {
@@ -96,7 +96,7 @@ function dash() {
 
 ## Settings for powerlevel9k theme
 POWERLEVEL9K_MODE='awesome-fontconfig'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon_joined dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon_joined dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs_joined rvm history time)
 
 # enable the vcs segment in general
@@ -104,7 +104,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs_joined rvm history ti
 #POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
 
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="237"
 POWERLEVEL9K_OS_ICON_BACKGROUND="237"
@@ -116,6 +116,7 @@ POWERLEVEL9K_RVM_VISUAL_IDENTIFIER_COLOR="red"
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
+#DEFAULT_USER="joe.lu"
 
 ## Settings for rvm (ruby) & nvm (node.js)
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
