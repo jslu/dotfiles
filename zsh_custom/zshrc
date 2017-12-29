@@ -40,7 +40,7 @@ plugins=(osx git node npm nvm tmux rails rvm ruby vagrant brew sudo zsh-syntax-h
 source $ZSH/oh-my-zsh.sh
 
 # Setup zsh-autosuggestions
-source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 # Enable autosuggestions automatically
 #zle-line-init() {
