@@ -77,10 +77,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 
 # Joe's own aliases
-alias cask="brew cask"
-alias diff="colordiff"
-alias ggl="googler -n 7"
-alias tc-proxy="ssh -ND 1088 -o 'GatewayPorts yes' tc-staging.ayla.com.cn &"
+[ -f ~/.aliases ] && source ~/.aliases
 
 source "`brew --prefix`/etc/grc.bashrc"
 
