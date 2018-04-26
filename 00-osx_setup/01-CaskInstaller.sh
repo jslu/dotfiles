@@ -23,24 +23,25 @@ brew cask install keka
 brew cask install the-unarchiver
 #brew cask install onepassword
 #brew cask install flash
-brew cask install hipchat
+#brew cask install hipchat
 brew cask install skype
-brew cask install slack
+#brew cask install slack
 brew cask install iterm2
 brew cask install marked
 #brew cask install dropbox
 
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install vagrant
-brew cask install vagrant-manager
-brew cask install dockertoolbox
+#brew cask install virtualbox
+#brew cask install virtualbox-extension-pack
+#brew cask install vagrant
+#brew cask install vagrant-manager
+#brew cask install dockertoolbox
+brew cask install docker-edge
 
 brew cask install hacker-menu
 
 brew cask install dash
 brew cask install gitx
-brew cask install sourcetree
+#brew cask install sourcetree
 brew cask install java
 brew cask install postgres
 brew cask install postico
@@ -48,15 +49,15 @@ brew cask install mysqlworkbench
 
 #brew cask install caskroom-versions/sublime-text3
 #brew cask install textexpander
-brew cask install appcleaner
-brew cask install clipmenu
+#brew cask install appcleaner
+#brew cask install clipmenu
 brew cask install colorpicker
 brew cask install colorpicker-developer
 brew cask install cyberduck
-brew cask install karabiner
+brew cask install karabiner-elements
 brew cask install keycastr
 brew cask install magican
-brew cask install simplecap
+#brew cask install simplecap
 brew cask install xmind
 brew cask install xquartz
 
@@ -65,10 +66,12 @@ brew cask install shadowsocksx
 
 brew cask install vlc
 brew cask install flip4mac
-brew cask install perian
+brew cask install duet
 
-brew cask install divvy
-brew cask install stay
+brew cask install moom
+brew cask install bettertouchtool
+brew cask install contexts
+brew cask install timing
 
 # need password
 #brew cask install mamp

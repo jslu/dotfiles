@@ -25,6 +25,3 @@ diff-so-fancy \
 googler \
 fzf
 
-brew tap homebrew/versions
-
-
