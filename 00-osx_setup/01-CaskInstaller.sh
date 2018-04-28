@@ -14,6 +14,7 @@ brew update
 
 # install cask
 brew tap caskroom/cask
+brew tap caskroom/versions
 
 #brew cask install alfred
 #brew cask alfred link
@@ -25,6 +26,8 @@ brew cask install the-unarchiver
 #brew cask install flash
 #brew cask install hipchat
 brew cask install skype
+brew cask install franz
+brew cask install postman
 #brew cask install slack
 brew cask install iterm2
 brew cask install marked
@@ -46,6 +49,7 @@ brew cask install java
 brew cask install postgres
 brew cask install postico
 brew cask install mysqlworkbench
+brew cask install intellij-idea-ce
 
 #brew cask install caskroom-versions/sublime-text3
 #brew cask install textexpander
@@ -56,7 +60,7 @@ brew cask install colorpicker-developer
 brew cask install cyberduck
 brew cask install karabiner-elements
 brew cask install keycastr
-brew cask install magican
+#brew cask install magican
 #brew cask install simplecap
 brew cask install xmind
 brew cask install xquartz
@@ -72,6 +76,8 @@ brew cask install moom
 brew cask install bettertouchtool
 brew cask install contexts
 brew cask install timing
+brew cask install istat-menus
+brew cask install bartender
 
 # need password
 #brew cask install mamp
