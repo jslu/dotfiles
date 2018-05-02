@@ -100,7 +100,10 @@ brew cask install aerial
 
 # GUI apps that currently have no cask
 #Xcode
-#Microsoft remote desktop
+#Microsoft Office
 #LINE
 #Wunderlist
 #WeChat
+#Yahoo KeyKey (w/ liu3.cin under /Library/Input\ Methods/Yahoo!\ KeyKey.app/Contents/Resources/DataTables/Generic)
+#  - liu3.cin: http://www.macuknow.com/sites/default/files/liu3.cin_.zip
+#TinyTake
