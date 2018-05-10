@@ -35,12 +35,12 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx git node npm nvm tmux rails rvm ruby vagrant brew sudo zsh-syntax-highlighting history-substring-search autosuggestions autojump)
+plugins=(osx git node npm nvm tmux rails rvm ruby vagrant brew sudo zsh-syntax-highlighting history-substring-search zsh-autosuggestions autojump)
 
 source $ZSH/oh-my-zsh.sh
 
 # Setup zsh-autosuggestions
-source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/autosuggestions.plugin.zsh
+#source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 # Enable autosuggestions automatically
 #zle-line-init() {
@@ -54,8 +54,10 @@ bindkey '^T' autosuggest-toggle
 
 
 # Setup history-substring-search
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+#bindkey '^[[A' history-substring-search-up
+#bindkey '^[[B' history-substring-search-down
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
 
 
 # Customize to your needs...
