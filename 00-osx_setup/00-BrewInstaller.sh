@@ -23,6 +23,6 @@ ssh-copy-id \
 colordiff \
 diff-so-fancy \
 googler \
-autojump \
+fasd \
 fzf
 

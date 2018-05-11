@@ -54,14 +54,12 @@ bindkey '^T' autosuggest-toggle
 
 
 # Setup history-substring-search
-#bindkey '^[[A' history-substring-search-up
-#bindkey '^[[B' history-substring-search-down
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 
 
 # Customize to your needs...
-export PATH=~/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:~/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:~/bin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/bin:$PATH
 
 ## by jslu
 fpath=(/usr/local/share/zsh-completions $HOME/.zsh/func $fpath)
@@ -81,11 +79,11 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Joe's own aliases
 [ -f ~/.aliases ] && source ~/.aliases
 
-source "`brew --prefix`/etc/grc.zsh"
-source "`brew --prefix`/etc/profile.d/autojump.sh"
+[ -x /usr/local/bin/brew ] && source "`brew --prefix`/etc/grc.zsh"
+[ -x /usr/local/bin/brew ] && source "`brew --prefix`/etc/profile.d/autojump.sh"
 
 #export HOMEBREW_GITHUB_API_TOKEN="TOKENS-NOT-TO-BE-DISCLOSED"
-source ~/.secret_settings_rc
+[ -f ~/.secret_settings_rc ] && source ~/.secret_settings_rc
 
 # Look up API from command line
 # Usage example: $ dash ruby:FileUtil
@@ -119,15 +117,6 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 #DEFAULT_USER="joe.lu"
 
-## Settings for rvm (ruby) & nvm (node.js)
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/joe.lu/.sdkman"
@@ -139,5 +128,3 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 [[ -s $HOME/.asdf/asdf.sh ]] && source $HOME/.asdf/asdf.sh
 [[ -s $HOME/.asdf/completions/asdf.bash ]] && source $HOME/.asdf/completions/asdf.bash
-
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home'
