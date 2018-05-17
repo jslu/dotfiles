@@ -59,9 +59,7 @@ brew cask install colorpicker
 brew cask install colorpicker-developer
 brew cask install cyberduck
 brew cask install karabiner-elements
-brew cask install keycastr
-#brew cask install magican
-#brew cask install simplecap
+brew cask install mousepose
 brew cask install xmind
 brew cask install xquartz
 
