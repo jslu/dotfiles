@@ -76,14 +76,8 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 #export GRAILS_HOME="/usr/local/opt/grails/libexec"
 
 
-# Joe's own aliases
-[ -f ~/.aliases ] && source ~/.aliases
-
 [ -x /usr/local/bin/brew ] && source "`brew --prefix`/etc/grc.zsh"
 [ -x /usr/local/bin/brew ] && source "`brew --prefix`/etc/profile.d/autojump.sh"
-
-#export HOMEBREW_GITHUB_API_TOKEN="TOKENS-NOT-TO-BE-DISCLOSED"
-[ -f ~/.secret_settings_rc ] && source ~/.secret_settings_rc
 
 # Look up API from command line
 # Usage example: $ dash ruby:FileUtil
@@ -128,3 +122,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 [[ -s $HOME/.asdf/asdf.sh ]] && source $HOME/.asdf/asdf.sh
 [[ -s $HOME/.asdf/completions/asdf.bash ]] && source $HOME/.asdf/completions/asdf.bash
+
+# Joe's own aliases
+[ -f ~/.aliases ] && source ~/.aliases
+
+#export HOMEBREW_GITHUB_API_TOKEN="TOKENS-NOT-TO-BE-DISCLOSED"
+[ -f ~/.secret_settings_rc ] && source ~/.secret_settings_rc
+
