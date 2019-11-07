@@ -38,18 +38,18 @@ brew cask install marked
 #brew cask install vagrant
 #brew cask install vagrant-manager
 #brew cask install dockertoolbox
-brew cask install docker-edge
+#brew cask install docker-edge
 
 brew cask install hacker-menu
 
 brew cask install dash
-brew cask install gitx
-#brew cask install sourcetree
+#brew cask install gitx
+brew cask install sourcetree
 brew cask install java
-brew cask install postgres
-brew cask install postico
-brew cask install mysqlworkbench
-brew cask install intellij-idea-ce
+#brew cask install postgres
+#brew cask install postico
+#brew cask install mysqlworkbench
+#brew cask install intellij-idea-ce
 
 #brew cask install caskroom-versions/sublime-text3
 #brew cask install textexpander
@@ -59,7 +59,7 @@ brew cask install colorpicker
 brew cask install colorpicker-developer
 brew cask install cyberduck
 brew cask install karabiner-elements
-brew cask install mousepose
+#brew cask install mousepose
 brew cask install xmind
 brew cask install xquartz
 
@@ -68,7 +68,7 @@ brew cask install shadowsocksx
 
 brew cask install vlc
 brew cask install flip4mac
-brew cask install duet
+#brew cask install duet
 
 brew cask install moom
 brew cask install bettertouchtool
@@ -81,10 +81,10 @@ brew cask install bartender
 #brew cask install mamp
 #brew cask install splashtop-personal
 #brew cask install splashtop-streamer
-brew cask install teamviewer
+#brew cask install teamviewer
 
 # install Fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-source-code-pro
 brew cask install font-fontawesome
 brew cask install font-inconsolata-dz-for-powerline

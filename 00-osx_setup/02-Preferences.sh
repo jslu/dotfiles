@@ -2,7 +2,7 @@
 
 #############################################################
 # Set hostname
-sudo scutil --set HostName Ayla-JoeLu-MBPR
+sudo scutil --set HostName UBNT-JoeLu-MBPR
 
 
 #############################################################
@@ -115,13 +115,13 @@ defaults write com.apple.iTunes DeviceBackupsDisabled -bool true
 
 #############################################################
 # Agree to Xcode
-sudo xcrun cc
+#sudo xcrun cc
 
 
 #############################################################
 # Install RVM
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-curl -sSL https://get.rvm.io | bash -s stable
+#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+#curl -sSL https://get.rvm.io | bash -s stable
 
 
 #############################################################
@@ -129,9 +129,9 @@ curl -sSL https://get.rvm.io | bash -s stable
 git config --global alias.st "status" && \
 git config --global alias.ci "commit" && \
 git config --global alias.co "checkout" && \
-git config --global user.name "Ayla Joe.Lu" && \
-git config --global user.email "joe.lu@aylanetworks.com" && \
-git config --global github.user jslu && \
+git config --global user.name "UBNT Joe.Lu" && \
+git config --global user.email "joe.lu@ui.com" && \
+git config --global github.user joelu-ui && \
 git config --global core.editor "vi" && \
 git config --global color.ui true && \
 git config --global column.ui auto && \
